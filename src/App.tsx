@@ -1,6 +1,6 @@
 import React from 'react';
 import ContextProvider from './context/ContextProvider';
-import Router from './routes';
+import MainRouter from './routes';
 import { MuiThemeProvider } from './common/utils/theme';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <MuiThemeProvider>
       <ContextProvider>
         <div className="App">
-          <Router />
+          <MainRouter />
         </div>
       </ContextProvider>
     </MuiThemeProvider>

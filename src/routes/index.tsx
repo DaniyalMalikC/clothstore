@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 // Screens
 
@@ -11,12 +11,14 @@ import Product from '../screens/Product';
 
 function Router() {
   return (
-    <BrowserRouter>
-      <Route path="/" element={<Studio />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/Product" element={<Product />} />
-      <Route element={<Err404 />} />
-    </BrowserRouter>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Studio />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Product" element={<Product />} />
+        <Route element={<Err404 />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
