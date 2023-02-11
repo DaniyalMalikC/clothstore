@@ -13,7 +13,7 @@ function Router() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Studio />} />
+        <Route path="/" element={<Product />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Product" element={<Product />} />
         <Route element={<Err404 />} />
