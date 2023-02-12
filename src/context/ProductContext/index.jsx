@@ -46,7 +46,7 @@ function ProductContextProvider(props) {
       title: 'Grass Autumn Dev. T-shirt',
       description: 'Cillum sunt incididunt ipsum eu nisi occaecat est anim velit Lorem. Nisi tempor nisi quis fugiat eiusmod incididunt deserunt esse amet quis deserunt aliquip veniam. Eu aute quis ad magna irure Lorem ad aliqua anim excepteur magna cillum. Sunt id culpa sit eu cupidatat incididunt. Eu commodo consectetur fugiat ea fugiat in esse. Labore incididunt fugiat dolor amet duis proident nulla officia eiusmod incididunt Lorem magna officia. Voluptate tempor ex exercitation laborum tempor commodo officia. Anim ex nulla ullamco aliquip minim cillum non irure. Id velit magna cillum enim sit veniam qui officia do mollit qui anim. Ex exercitation sit anim dolore culpa labore aute tempor occaecat aliquip. Cillum nisi ex sint eu deserunt commodo.',
       size: 'S',
-      color: 'Green & Yellow',
+      color: ['Green', 'Yellow'],
       prize: '$60',
     },
     {
@@ -70,7 +70,7 @@ function ProductContextProvider(props) {
       title: 'Honey Dev. T-shirt',
       description: 'Cillum sunt incididunt ipsum eu nisi occaecat est anim velit Lorem. Nisi tempor nisi quis fugiat eiusmod incididunt deserunt esse amet quis deserunt aliquip veniam. Eu aute quis ad magna irure Lorem ad aliqua anim excepteur magna cillum. Sunt id culpa sit eu cupidatat incididunt. Eu commodo consectetur fugiat ea fugiat in esse. Labore incididunt fugiat dolor amet duis proident nulla officia eiusmod incididunt Lorem magna officia. Voluptate tempor ex exercitation laborum tempor commodo officia. Anim ex nulla ullamco aliquip minim cillum non irure. Id velit magna cillum enim sit veniam qui officia do mollit qui anim. Ex exercitation sit anim dolore culpa labore aute tempor occaecat aliquip. Cillum nisi ex sint eu deserunt commodo.',
       size: 'S',
-      color: 'Yellow & Brown',
+      color: ['Yellow', 'Brown'],
       prize: '$60',
     },
     {
