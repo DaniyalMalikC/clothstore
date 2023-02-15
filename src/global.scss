@@ -1,3 +1,4 @@
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -7,6 +8,13 @@ code {
   padding: 0;
   scroll-behavior: smooth;
   transition: 0.25s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Relaway', 'Montserrat', 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body,

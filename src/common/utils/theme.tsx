@@ -3,8 +3,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = {
   backgroundSurfaceColor: 'lightGrey',
+  primaryColor: '#001944',
   secondaryColor: '#DBD4CB',
-  primaryColor: '#005968',
   blackColor: '#000000',
   whiteColor: '#ffffff',
   grayColor: '#CACACA',
@@ -16,6 +16,43 @@ const theme = {
 
 const THEME = createTheme({
   typography: {
+    fontFamily: 'Relaway, Montserrat, Poppins', // '"Roboto", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '3.3rem',
+      fontWeight: 700,
+    },
+    h2: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '2.8rem',
+      fontWeight: 700,
+    },
+    h3: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '2.2rem',
+      fontWeight: 700,
+    },
+    h4: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '1.8rem',
+      fontWeight: 700,
+    },
+    h5: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '1.3rem',
+    },
+    h6: {
+      fontFamily: 'Poppins, Montserrat',
+      fontSize: '1.2rem',
+    },
+    subtitle1: {
+      fontFamily: 'Relaway, Montserrat',
+      fontSize: '1rem',
+    },
+    subtitle2: {
+      fontFamily: 'Relaway, Montserrat',
+      fontSize: '0.8rem',
+    },
   },
   palette: {
     primary: { main: theme.primaryColor },
