@@ -78,6 +78,7 @@ export const useButtonStyles = makeStyles()((theme) => ({
       color: `${theme.primaryColor}`,
       background: 'transparent',
       fontWeight: 400,
+      margin: '10px 0',
     },
   },
 }));

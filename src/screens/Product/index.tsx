@@ -2,9 +2,9 @@ import React, { useState, useContext } from 'react';
 
 import {
   Avatar,
-  Box, Container, Grid, ListItem, ListItemAvatar, ListItemText, Typography, Divider,
+  Box, Container, Grid, ListItem, ListItemAvatar, ListItemText, Typography, Divider, Chip,
 } from '@mui/material';
-import ImageIcon from '@mui/icons-material/Image';
+import { Height, Colorize } from '@mui/icons-material';
 import { ProductContext } from '../../context/ProductContext';
 import { ProductSwiper } from '../../components/Parts';
 
@@ -32,6 +32,9 @@ function Product() {
         <Grid container marginY={2} spacing={4}>
           <Grid item xs={6}>
             <Box className={classes.productDescription}>
+              <Typography variant="subtitle2">
+                Mens Wear
+              </Typography>
               <Typography variant="h3" className={classes.productTitle}>
                 {activeProduct.title}
               </Typography>
@@ -48,14 +51,15 @@ function Product() {
               <Typography variant="h4" color={theme.primaryColor} marginBottom={2}>
                 Product Guide
               </Typography>
+              {['T-Shirt', 'Round Neck'].map((tags) => <Chip label={tags} className={classes.chips} />)}
               <ListItem>
                 <ListItemAvatar>
-                  <Avatar>
-                    <ImageIcon />
+                  <Avatar sx={{ bgcolor: theme.primaryColor }}>
+                    <Height />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText
-                  primaryTypographyProps={{ fontSize: '0.8rem' }}
+                  primaryTypographyProps={{ fontSize: '0.7rem' }}
                   secondaryTypographyProps={{ fontSize: '1.2rem' }}
                   primary="Size"
                   secondary={activeProduct.size}
@@ -65,8 +69,8 @@ function Product() {
               <Divider />
               <ListItem>
                 <ListItemAvatar>
-                  <Avatar>
-                    <ImageIcon />
+                  <Avatar sx={{ bgcolor: theme.primaryColor }}>
+                    <Colorize />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText

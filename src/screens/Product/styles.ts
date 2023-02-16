@@ -47,4 +47,9 @@ export const useProductStyles = makeStyles()((theme) => ({
     '-webkit-box-orient': 'vertical',
     overflow: 'hidden',
   },
+  chips: {
+    marginRight: 10,
+    backgroundColor: theme.secondaryColor,
+    color: theme.primaryColor,
+  },
 }));
