@@ -14,6 +14,7 @@ export interface ProductData {
     size?: SizeType
     color: string[]
     prize: string
+    tags?: string[]
 }
 
 export interface ProductSwiperProps {

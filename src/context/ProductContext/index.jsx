@@ -24,6 +24,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#501212'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck', 'Solid'],
     },
     {
       image: img2,
@@ -32,6 +33,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#4A7742'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck', 'Pattern'],
     },
     {
       image: img3,
@@ -40,6 +42,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#4A7742'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck', 'Pattern'],
     },
     {
       image: img4,
@@ -48,6 +51,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#4A7742', '#2C4C34'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck', 'Pattern'],
     },
     {
       image: img5,
@@ -56,6 +60,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#BAD3C6'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck'],
     },
     {
       image: img6,
@@ -64,6 +69,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#BAD3C6', '#255D87'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck'],
     },
     {
       image: img7,
@@ -72,6 +78,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#E2D484', '#AB5A2D'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck'],
     },
     {
       image: img8,
@@ -80,6 +87,7 @@ function ProductContextProvider(props) {
       size: 'S',
       color: ['#4A7742'],
       prize: '$60',
+      tags: ['T-Shirt', 'Round Neck'],
     },
   ]
 
