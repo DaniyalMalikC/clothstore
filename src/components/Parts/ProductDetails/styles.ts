@@ -21,7 +21,7 @@ export const useProductDetailStyles = makeStyles()((theme) => ({
     textOverflow: 'ellipsis',
     display: '-webkit-box',
     WebkitLineClamp: 1,
-    '-webkit-box-orient': 'vertical',
+    WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
   },
   productDetails: {
@@ -30,7 +30,7 @@ export const useProductDetailStyles = makeStyles()((theme) => ({
     textOverflow: 'ellipsis',
     display: '-webkit-box',
     WebkitLineClamp: 5,
-    '-webkit-box-orient': 'vertical',
+    WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
   },
   chips: {

@@ -68,11 +68,11 @@ function ProductSwiper(props: ProductSwiperProps) {
       slideToClickedSlide
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
+      onActiveIndexChange={(e) => onClick(e.activeIndex)}
     >
       {product?.map((item, index) => (
         <SwiperSlide key={item.title}>
           <ProductDisplay
-            handleClick={() => onClick(index)}
             image={item.image}
             title={item.title}
             active={item.title === activeProduct?.title}

@@ -7,7 +7,7 @@ import useTheme from '../../../common/utils/theme'
 
 function ListItem(props: ListItemProps) {
   const {
-    icon, primaryLabel, secondaryLabel, divider,
+    icon, primarylabel, secondarylabel, divider,
   } = props
   const theme = useTheme()
 
@@ -21,11 +21,11 @@ function ListItem(props: ListItemProps) {
           </Avatar>
         </ListItemAvatar>
         )}
-        {(primaryLabel || secondaryLabel) && <ListItemText
+        {(primarylabel || secondarylabel) && <ListItemText
           primaryTypographyProps={{ fontSize: '0.7rem' }}
           secondaryTypographyProps={{ fontSize: '1.2rem', display: 'flex', flexDirection: 'row' }}
-          primary={primaryLabel}
-          secondary={secondaryLabel}
+          primary={primarylabel}
+          secondary={secondarylabel}
           color="white"
         />}
       </MUIListItem>

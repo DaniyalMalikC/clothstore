@@ -11,7 +11,7 @@ export interface ProductData {
     image: string
     title: string
     description?: string
-    size?: SizeType
+    size?: SizeType[]
     color: string[]
     prize: string
     tags?: string[]

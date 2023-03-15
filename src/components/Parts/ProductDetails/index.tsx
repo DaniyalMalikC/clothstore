@@ -10,27 +10,38 @@ import { useProductDetailStyles } from './styles';
 import useTheme from '../../../common/utils/theme';
 import { Button, ListItem } from '../../UI';
 
-function ProductColor({ color }) {
-  return color.length > 1
-    ? color?.map((color) => (
-      <div style={{
+function ProductColor({ colors }) {
+  return colors?.map((color) => (
+    <span
+      key={color}
+      style={{
         backgroundColor: color,
         width: 20,
         height: 20,
         borderRadius: 5,
         marginRight: 5,
       }}
-      />
-    ))
-    : <div style={{
-      backgroundColor: color[0],
-      width: 20,
-      height: 20,
-      borderRadius: 5,
-    }}
     />
+  ))
 }
 
+function ProductSize({ sizes }) {
+  return (sizes || ['All']).map((size) => (
+    <span
+      key={size}
+      style={{
+        // width: 20,
+        padding: '2px 5px',
+        // height: 20,
+        fontSize: 14,
+        border: '0.25px solid black',
+        borderRadius: 5,
+        marginRight: 5,
+        textAlign: 'center',
+      }}
+    >{size}
+    </span>))
+}
 function ProductDetails(props: { activeProduct: ProductData }) {
   const { activeProduct } = props
 
@@ -61,12 +72,17 @@ function ProductDetails(props: { activeProduct: ProductData }) {
             <Typography variant="h4" color={theme.primaryColor} marginBottom={2}>
               Product Guide
             </Typography>
-            {activeProduct.tags && activeProduct.tags?.map((tags) => <Chip label={tags} className={classes.chips} />)}
-            <ListItem icon={<Height />} primaryLabel="Size" secondaryLabel={activeProduct.size} divider />
+            {activeProduct.tags && activeProduct.tags?.map((tags) => <Chip key={tags} label={tags} className={classes.chips} />)}
+            <ListItem
+              icon={<Height />}
+              primarylabel="Size"
+              secondarylabel={<ProductSize sizes={activeProduct.size} />}
+              divider
+            />
             <ListItem
               icon={<Colorize />}
-              primaryLabel="Color"
-              secondaryLabel={<ProductColor color={activeProduct.color} />}
+              primarylabel="Color"
+              secondarylabel={<ProductColor colors={activeProduct.color} />}
               divider
             />
             <Button label="Add to Cart" variant="text" />
