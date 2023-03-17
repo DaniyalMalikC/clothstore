@@ -30,9 +30,7 @@ function ProductSize({ sizes }) {
     <span
       key={size}
       style={{
-        // width: 20,
         padding: '2px 5px',
-        // height: 20,
         fontSize: 14,
         border: '0.25px solid black',
         borderRadius: 5,

@@ -20,4 +20,25 @@ export const useProductStyles = makeStyles()((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  relatedContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    padding: '50px 0',
+    backgroundColor: `${theme.primaryColor}10`,
+  },
+  relatedProducts: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  cardTitle: {
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    WebkitLineClamp: 1,
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+  },
 }));
