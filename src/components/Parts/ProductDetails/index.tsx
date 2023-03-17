@@ -73,14 +73,14 @@ function ProductDetails(props: { activeProduct: ProductData }) {
             {activeProduct.tags && activeProduct.tags?.map((tags) => <Chip key={tags} label={tags} className={classes.chips} />)}
             <ListItem
               icon={<Height />}
-              primarylabel="Size"
-              secondarylabel={<ProductSize sizes={activeProduct.size} />}
+              primaryLabel="Size"
+              secondaryLabel={<ProductSize sizes={activeProduct.size} />}
               divider
             />
             <ListItem
               icon={<Colorize />}
-              primarylabel="Color"
-              secondarylabel={<ProductColor colors={activeProduct.color} />}
+              primaryLabel="Color"
+              secondaryLabel={<ProductColor colors={activeProduct.color} />}
               divider
             />
             <Button label="Add to Cart" variant="text" />
