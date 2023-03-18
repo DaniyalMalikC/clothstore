@@ -5,11 +5,11 @@ const {
   makeStyles,
 } = createMakeStyles({ useTheme });
 
-export const useCardStyles = makeStyles()((theme) => ({
+export const useCardStyles = makeStyles<{ mediaQuery?: boolean }>()((theme, { mediaQuery }) => ({
   card: {
     width: 300,
     height: 460,
-    margin: '40px 80px',
+    margin: mediaQuery ? '0px' : '25px 45px',
   },
   cardImage: {
     height: 300,

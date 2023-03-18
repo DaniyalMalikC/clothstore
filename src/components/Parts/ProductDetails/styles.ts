@@ -11,11 +11,13 @@ export const useProductDetailStyles = makeStyles()((theme) => ({
     backgroundColor: theme.primaryColor,
     padding: 25,
     color: theme.whiteColor,
+    minWidth: 300,
   },
   productInformation: {
     // backgroundColor: theme.secondaryColor,
     borderRadius: 5,
     padding: 25,
+    minWidth: 300,
   },
   productTitle: {
     textOverflow: 'ellipsis',

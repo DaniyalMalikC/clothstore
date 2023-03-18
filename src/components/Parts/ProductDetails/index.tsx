@@ -48,8 +48,8 @@ function ProductDetails(props: { activeProduct: ProductData }) {
 
   return (
     <Container>
-      <Grid container marginY={2} spacing={4}>
-        <Grid item xs={6}>
+      <Grid container justifyContent="center" flexDirection="row" flexWrap="wrap" marginY={2} spacing={4}>
+        <Grid item xs={6} minWidth={300}>
           <Box className={classes.productDescription}>
             <Typography variant="subtitle2">
               Mens Wear
@@ -65,7 +65,7 @@ function ProductDetails(props: { activeProduct: ProductData }) {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} minWidth={300}>
           <Box className={classes.productInformation}>
             <Typography variant="h4" color={theme.primaryColor} marginBottom={2}>
               Product Guide

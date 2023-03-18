@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-  Card as MuiCard, CardActions, CardContent, CardMedia, Typography,
+  Card as MuiCard, CardActions, CardContent, CardMedia, Typography, useMediaQuery,
 } from '@mui/material';
 import { useCardStyles } from './styles';
 import { CardProps } from './types';
@@ -12,7 +12,8 @@ function Card(props: CardProps) {
     image, title, subtitle, buttonLabel, handleButton, buttonIcon, ...rest
   } = props
 
-  const { classes } = useCardStyles()
+  const matches = useMediaQuery('(max-width:780)');
+  const { classes } = useCardStyles({ mediaQuery: matches })
 
   const onButtonPress = () => {
     if (handleButton) {

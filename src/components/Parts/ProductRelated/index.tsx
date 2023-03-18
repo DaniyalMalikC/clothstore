@@ -12,7 +12,7 @@ import { ProductData } from '../ProductSwiper/types';
 function RelatedProduct({ product }: { product: ProductData[]}) {
   const { classes } = useRelatedProductStyles()
   const theme = useTheme()
-  const matches = useMediaQuery('(max-width:1440px)');
+  const matches = useMediaQuery('(max-width: 1559px)');
 
   const handleAddtoCart = () => {
     console.log('Added to Card!')
