@@ -9,7 +9,7 @@ function App() {
     <MuiThemeProvider>
       <ContextProvider>
         <div className="App">
-          <Header />
+          {/* <Header /> */}
           <Router />
         </div>
       </ContextProvider>

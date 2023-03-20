@@ -9,6 +9,7 @@ export type SizeType = 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL';
 
 export interface ProductData {
     image: string
+    model: string
     title: string
     description?: string
     size?: SizeType[]
