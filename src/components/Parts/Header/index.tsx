@@ -8,7 +8,7 @@ import { Button } from '../../UI';
 import useTheme from '../../../common/utils/theme';
 import { useHeaderStyles } from './styles';
 
-const pages = ['Home', 'Studio', 'Try Out'];
+const pages = [{ name: 'Studio', path: '/clothstore' }, { name: 'Product', path: '/clothstore/Product' }, { name: 'Try Out', path: '/clothstore/Tryout' }];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -34,7 +34,7 @@ function Header() {
               variant="h6"
               noWrap
               component="a"
-              href="/"
+              href="/clothstore"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -75,8 +75,8 @@ function Header() {
               >
                 {pages.map((page) => (
 
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link to="/Product"><Typography textAlign="center">{page}</Typography></Link>
+                  <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                    <Link to={page.path}><Typography textAlign="center">{page.name}</Typography></Link>
                   </MenuItem>
                 ))}
               </Menu>
@@ -97,10 +97,10 @@ function Header() {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Link key={page} to="/Product">
+                <Link key={page.name} to={page.path}>
                   <Button
                     onClick={handleCloseNavMenu}
-                    label={page}
+                    label={page.name}
                   />
                 </Link>
               ))}

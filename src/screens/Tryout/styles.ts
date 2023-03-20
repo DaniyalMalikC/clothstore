@@ -39,7 +39,7 @@ export const useTryoutStyles = makeStyles<{background?: string}>()((theme, { bac
     margin: '50px',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
     borderRadius: 5,
     overflow: 'hidden',

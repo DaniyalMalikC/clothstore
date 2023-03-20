@@ -25,10 +25,10 @@ function Router() {
   // </HashRouter>
     <BrowserRouter>
       <Routes>
-        <Route path="clothstore/" element={<Header />}>
-          <Route index element={<Tryout />} />
-          <Route path="clothstore/Home" element={<Home />} />
-          <Route path="clothstore/Product" element={<Product />} />
+        <Route path="/clothstore" element={<Header />}>
+          <Route index element={<Studio />} />
+          <Route path="Tryout" element={<Tryout />} />
+          <Route path="Product" element={<Product />} />
           <Route path="*" element={<Err404 />} />
         </Route>
       </Routes>
