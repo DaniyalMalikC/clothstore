@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clothstore/static/css/main.37d2ad44.css",
-    "main.js": "/clothstore/static/js/main.84b9ba07.js",
+    "main.js": "/clothstore/static/js/main.d296c59a.js",
     "static/media/img4.png": "/clothstore/static/media/img4.9f855cf2bf866b6bc23e.png",
     "static/media/studio.jpg": "/clothstore/static/media/studio.06f31848035b537058ba.jpg",
     "static/media/img8.png": "/clothstore/static/media/img8.a8db135491033f64fb36.png",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.37d2ad44.css",
-    "static/js/main.84b9ba07.js"
+    "static/js/main.d296c59a.js"
   ]
 }
