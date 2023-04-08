@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/clothstore/static/css/main.37d2ad44.css",
-    "main.js": "/clothstore/static/js/main.828e55f3.js",
-    "static/media/studio.jpg": "/clothstore/static/media/studio.4149b5c4f1b3ecd80cdd.jpg",
+    "main.js": "/clothstore/static/js/main.ac8583bb.js",
     "static/media/img4.png": "/clothstore/static/media/img4.9f855cf2bf866b6bc23e.png",
+    "static/media/studio.jpg": "/clothstore/static/media/studio.06f31848035b537058ba.jpg",
     "static/media/img8.png": "/clothstore/static/media/img8.a8db135491033f64fb36.png",
     "static/media/model.png": "/clothstore/static/media/model.e08325c9113541721590.png",
     "static/media/img5.png": "/clothstore/static/media/img5.c0ae3ce299cb15b04f7b.png",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.37d2ad44.css",
-    "static/js/main.828e55f3.js"
+    "static/js/main.ac8583bb.js"
   ]
 }
